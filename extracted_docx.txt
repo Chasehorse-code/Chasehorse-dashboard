@@ -1,0 +1,311 @@
+CHASEHORSE
+Growth Enabling Logiworkx Partner
+Complete Website Requirements, Content & Frontend Implementation Plan
+Version 1.0 | Frontend-first | React + TypeScript | Backend planned for a later phase
+Visual direction: warm ivory (#F4F1EA), charcoal (#171717), signal orange (#FF4D16), white cards (#FFFFFF), and warm-gray borders (#E2DED5). Use the supplied ChaseHorse logo and the uploaded design reference as the primary brand guidance.
+1. Project objective and delivery scope
+Build a premium, responsive ChaseHorse website for the Growth Enabler Logiworkx Platform (GELP). The first delivery phase is frontend-only. Use React + TypeScript with Vite and reusable UI components. The Spring Boot backend, Supabase Auth integration, live business data, payments and real booking workflows are planned for a later phase. Frontend prototypes must not claim that these integrations are live.
+Primary objective: communicate ChaseHorse's broad capabilities across business services, consulting, growth, technology, field operations, logistics, sustainability and customer experience.
+Build the complete public website and service-page hierarchy, not only a single landing page.
+Keep all service content, routes, navigation definitions and images in structured, reusable configuration where practical.
+Use clearly labelled demo/sample data until approved backend APIs are connected.
+2. Brand and visual design system
+Token
+Value
+Usage
+Warm ivory
+#F4F1EA
+Main page backgrounds
+Charcoal
+#171717
+Navigation, headings, dark panels
+Signal orange
+#FF4D16
+Primary CTA, active states, markers
+White
+#FFFFFF
+Cards, panels and forms
+Warm gray border
+#E2DED5
+Dividers, card borders and input outlines
+Muted gray
+#625E58
+Secondary text and captions
+Typography: modern sans-serif with bold editorial headings, readable body text and generous line-height. Redesign or select the ChaseHorse wordmark typography only in a way that preserves the approved logo asset and proportions.
+Use restrained shadows, fine borders, rounded cards and consistent spacing.
+Avoid excessive neon, glassmorphism, gradients and constant motion.
+Use HD, relevant logistics, warehouse, fleet, technology, PPE and field-operations imagery.
+Provide responsive layouts, semantic HTML, keyboard focus states, alt text and reduced-motion support.
+3. Global navigation and interaction rules
+Desktop navigation should have the logo on the left, spacious menu items, and account actions on the right. Use animated mega-menus similar in interaction quality to the project44 reference specified in the source requirements.
+Navigation: Platform, Solutions, Live Market, Discover, HSE Shop, Careers, Partners and Login. Keep Login on the right; Partners should sit next to Login as specified in the source document.
+Desktop: hover or keyboard focus opens a large mega-menu below the navbar; pointer movement into the panel must not close it. Use smooth fade/slide/scale motion and a short close delay.
+Mobile/touch: use click/tap to open menus; do not rely on hover.
+Mega-menu cards should include relevant images or icons, title, concise description and a working route.
+No dead links, placeholder '#' links, or controls that look functional but do nothing.
+Login should open in a separate tab/window if that remains the agreed business requirement; confirm exact behavior before production.
+4. Platform (GELP) menu and page
+Clicking Platform should lead to the platform/service overview and expose the following content, based on the source document:
+What is GELP? (replace the heading 'Why GELP' with 'What is GELP')
+How it works?
+Platform Features
+Capabilities
+Technology Integration
+Flexible Finance Models
+Skilled Ready Resources
+Business Scalability
+Get Started
+Ask for Trials!
+Book a Demo
+Let's Connect — WhatsApp integration
+Design Your Platform
+Remove the generic 'All Services' heading. Put GELP in brackets where the source document specifies it. Use approved company copy; mark unconfirmed claims as draft content.
+5. Solutions menu and Design Your Solution (DIY)
+The Solutions mega-menu should present:
+Sectors
+Industries
+Partner Ecosystem
+Design Your Solution (DIY)
+Customised Solution
+Design Your Solution (DIY) must allow visitors to select relevant services from the three tiers using checkboxes. Show a Selected Services summary, itemized prices only when approved price data is provided, a calculated total, and a Pay Now action only after a real payment workflow is integrated. During the frontend-only phase, use an explicit demo state and never simulate a completed payment.
+The supplied reference PDF shows a three-column service selector and a selected-services summary. Preserve that selection-based concept, but do not invent or publish prices unless the company confirms them.
+6. Three service tiers and service catalogue
+Tier 1 — Core Business Services
+Digital Transformation
+Transport Management System (TMS)
+Online Procurement
+Contracts — RFQ & Approvals
+Inward Consignment Visibility
+Data Analytics — MIS
+CH Deploy
+Warehouse Inspection
+Unloading Site Monitoring
+Loading Site Monitoring
+Audits at 3PL Warehouses
+GST Office Coordination
+8D Customer Complaints
+Eyeball Management
+Stakeholder Collaboration
+Time-Based Closure
+Deep Research & Root Cause Analysis
+Linked to Customer Experience (CX)
+KPI Tracker & Analytics
+Merchandise & PPEs
+Returns Management
+Tier 2 — Strategic & Growth Services
+Digital Advancement
+TMS Advanced
+Data Science & Machine Learning
+Automations
+Generic AI Utilization
+On-job Tech Training
+Optimization Tools
+Freight Optimization
+Routes / Lanes Rationalization
+Supplier Integration
+Load & Capacity Optimization
+Freight Bills Authentication
+DEPLOY-CDX Pro
+Technical On-field Leads
+On-field Incident Support
+Training Programs
+Stock Taking
+Quality Testing
+Fleet & Driver Management
+Accessories for Drivers & Trucks
+ESG Sustainability
+Customer Experience Management
+Tier 3 — Advanced Operations & Technology Services
+IT & Advanced Technologies
+AI Deployment
+Drone Utilization
+IoT & Automations
+Data Science & Machine Learning
+Operational Advancement
+Cargo Lashing Techniques
+Palletized Movement
+Bar Coding & CAMS
+Robotics
+Fleet Operations
+Truck Deployment
+Incident Management
+Special Express Delivery
+Transhipment
+SCM & Process
+Standardizing SCM
+Market Report
+Vendor Sourcing
+Procurement
+Sustainability & Monitoring
+Compliance & Governance
+Create dedicated tier overview routes and individual service-detail routes. Required hierarchy: Home → Three-Tier Overview → Tier Page → Individual Service Page → Individual Subservice Page (where applicable) → Workflow / Booking / Enquiry.
+Each tier overview must explain why tiers exist, what they include, who each tier serves, how tiers connect, and how a business can select one or combine multiple services.
+7. Individual service detail-page template
+Service title, overview and relevant high-quality image.
+Detailed explanation and business problem addressed.
+Target customer or intended audience.
+Key features, deliverables and benefits.
+A service-specific step-by-step workflow from consultation through delivery.
+Expected outcomes, with unverified numerical claims omitted.
+Related services and subservices.
+Know More, Book Now / Connect Now, and enquiry actions as appropriate.
+WhatsApp contact action with approved contact information; contact-person image only if supplied and approved.
+Service sections on tier pages should alternate image-left/text-right and text-left/image-right. Reveal each section with viewport-triggered, staggered motion. Keep animations subtle, responsive and accessible.
+8. Homepage structure and hero experience
+Animated ChaseHorse logo introduction using the approved logo asset; short duration and no replay on every route change.
+Sticky, spacious navbar with premium animated mega-menus.
+Hero with a cinematic sequence of three high-quality background videos, smoothly transitioning via fade/slide. Use overlays so text remains legible.
+Hero content must represent the company's broad capabilities—not logistics alone—including business services, consulting, growth, technology, operations and other relevant verticals.
+Hero links: Know More, Book Now / Connect Now and WhatsApp contact action.
+Platform (Discover More), selected core services such as CH Deploy and Digital Transformation, Discover More, Customers, Benefits of the Platform and What It Is Going to Be.
+Three-tier service overview cards.
+India network map and service locations.
+Featured services with image-led alternating layouts.
+Company/customer/partner ecosystem and closing CTA.
+Comprehensive footer with summary navigation.
+The earlier approved visual direction is warm ivory, charcoal black, signal orange and white cards. Use the generated website-wide image as a visual composition reference, not as the website itself.
+9. India branch map
+Create a large interactive India map visualization. Preferred approach: React Three Fiber / Three.js with an accurate licensed geographic silhouette or verified GeoJSON, subtle extrusion, navy/cream surfaces and orange highlights. If accurate geographic data or performance constraints prevent 3D, use a correct 2D map fallback.
+New Delhi
+Mumbai
+Bengaluru
+Chennai
+Kolkata
+Hyderabad
+Markers must use accurate geographic coordinates, support hover labels and open a branch information card on click.
+Optional connection arcs and pulse animations; include reset-view and mobile-friendly controls.
+Do not invent street addresses, branch opening status, capacity, or live shipment information.
+10. Live Market menu and pages
+Book Truck Now
+Book Truck Terminal Space
+Deploy On-field Lead
+Secure Trip Finance
+Today Freight Index
+Each item should have its own route and relevant imagery. Live rates, bookings, finance and tracking remain demo-only until the approved APIs and data sources are integrated. Clearly label sample values.
+11. Discover menu and pages
+Learn & Grow
+Courses
+Internships
+Resources
+Video Guidance
+Company
+About Us
+Careers
+Demo
+Customers
+Programmes
+Insurance
+Current Offers
+Events
+Safety
+Locations
+Find Our Service Locations
+Find Offline HSE Stores
+Benefits of GELP
+Remove unrelated content from the current site if it is not listed in the approved navigation/content requirements.
+12. HSE Shop and merchandise
+Clicking HSE Shop should land on its own homepage.
+Show 'Find Offline Store' and 'Request On-site Store' prominently.
+Explain that ChaseHorse can deploy a store and manage compliance, using approved company wording.
+Use a proper e-commerce structure: product cards, search, filtering, sorting, product detail pages, size/colour variants where applicable, cart/checkout UI, order confirmation and order tracking.
+Payment and order confirmation must not be represented as real until backend and payment integration are implemented.
+Include Merchandise & PPEs and relevant safety gear imagery.
+13. Partners and workforce onboarding
+Partners should appear immediately next to Login in the navigation. Provide clear paths for:
+Join us — On-field Logistics Professionals.
+Join us — Transportation Professionals: transporters, fleet owners, drivers, freight traders and freight financials.
+Join us — Truck Terminal Space.
+Source-provided form link: https://forms.gle/QmiddiuRkaRLbesEA
+The form and any WhatsApp group link should be direct and visible. Use the supplied form link exactly; obtain and configure an approved WhatsApp link before launch.
+14. Careers and login
+Careers page: job listings, role details, search/filter UI and an application form with validation.
+Login page should be a separate page/tab as required in the source document; confirm final behavior before release.
+Client account/dashboard design should consider invoices, orders, projects, tasks, timesheets, addresses, connection & security, knowledge and documents as shown in the source screenshot.
+The source PDF mentions adding courses to the dashboard; include a Courses area in the dashboard requirements.
+During frontend phase, authentication and submission forms are UI prototypes only. Do not claim real authentication or submission.
+15. Technical frontend architecture
+React + TypeScript + Vite.
+React Router for routing.
+Tailwind CSS or the existing agreed styling system; avoid adding competing styling frameworks without reason.
+Framer Motion for menus, logo intro, card transitions and service-section reveals.
+Recharts for charts only where relevant.
+Lucide icons for consistent iconography.
+React Three Fiber / Three.js only for the India map if justified and performance-tested.
+Feature-based folders, shared layout components, typed data models, reusable page templates and a service/API abstraction layer.
+Keep all sample data isolated from components and clearly marked as demo-only.
+16. Suggested route map
+Route
+Purpose
+/
+Homepage
+/platform
+Platform / GELP overview
+/solutions
+Solutions overview and service tiers
+/solutions/tier-1
+Tier 1 overview
+/solutions/tier-2
+Tier 2 overview
+/solutions/tier-3
+Tier 3 overview
+/services/:serviceSlug
+Reusable individual service-detail route
+/services/:serviceSlug/:subserviceSlug
+Optional individual subservice route
+/live-market
+Live Market overview
+/live-market/book-truck
+Book Truck Now
+/live-market/terminal-space
+Book Truck Terminal Space
+/live-market/on-field-lead
+Deploy On-field Lead
+/live-market/trip-finance
+Secure Trip Finance
+/live-market/freight-index
+Today Freight Index
+/discover
+Discover overview
+/locations
+Service locations and India map
+/hse-shop
+HSE Shop homepage
+/hse-shop/products/:productSlug
+Product detail
+/partners
+Partner onboarding
+/careers
+Careers and jobs
+/login
+Login
+/account
+Client dashboard prototype
+/design-your-solution
+DIY service selector and summary
+/contact
+Contact / enquiry
+17. Delivery milestones
+M1 — Foundation: Inspect repo and assets, set design tokens, typography, routing, project structure and basic build.
+M2 — Navigation: Build sticky navbar, logo intro, accessible animated mega-menus and all menu cards/routes.
+M3 — Homepage: Build hero, video/image sequence, platform overview, three-tier cards, branch map and footer.
+M4 — Service catalogue: Build all tier pages, all individual service pages and optional subservice workflows.
+M5 — Remaining pages: Build Live Market, Discover, HSE Shop, Partners, Careers, Login and client dashboard UI.
+M6 — DIY selector: Build tier checkbox selector, selected-service summary and price calculation only from approved data.
+M7 — Quality review: Responsive, accessibility, route, animation, broken-image, lint, typecheck and production-build verification.
+Later backend phase: Spring Boot REST API, Supabase Auth, PostgreSQL migrations, secure JWT validation, real bookings, payments and live data.
+18. Acceptance checklist
+All requested navbar categories are present and correctly ordered.
+Mega-menus work with mouse, keyboard and touch, and do not flicker during pointer movement.
+All three service tiers and every listed service are represented.
+Every service has a dedicated detail route with tailored content and a relevant image.
+The service selector supports checkboxes, selected-service summary and correct total calculation based only on approved price data.
+India map includes all six requested cities and uses grounded geographic positions.
+Hero content communicates business services, consulting, technology, operations and logistics—not logistics alone.
+HSE Shop includes offline store and on-site store request paths plus an e-commerce-style UI.
+Partners section includes all partner categories and the source-provided Google Form link.
+Responsive design works on desktop, tablet and mobile.
+Accessibility and reduced-motion behavior are implemented.
+Frontend sample data is clearly marked and no UI claims that unconnected services are live.
+Linting, TypeScript checks and production build are run; actual results are documented.
+19. Source and content notes
+This combined requirements document consolidates the uploaded 'Website Design and CMS – Required Improvements' PDF with the follow-up project requirements shared in conversation: frontend-first React implementation, warm ivory/black/orange theme, animated logo and mega-menus, all service tiers and individual pages, and the six-city India map. Where the source PDF does not specify approved pricing, exact service copy, branch addresses, WhatsApp contact details, customer testimonials, videos or live data, those items must be supplied or approved by ChaseHorse before production.

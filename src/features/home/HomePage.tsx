@@ -1,0 +1,29 @@
+import React from 'react';
+import { HeroSection } from './HeroSection';
+import { WhoWeAre } from './WhoWeAre';
+import { WhyGelp } from './WhyGelp';
+import { ThreeTierSection } from './ThreeTierSection';
+import { PlatformBenefitsSection } from './PlatformBenefitsSection';
+
+export const HomePage: React.FC = () => {
+  return (
+    <div className="w-full bg-[#f3f0e8]">
+      {/* 1. Hero Section: Split 50/50 with India Map */}
+      <HeroSection />
+
+      {/* 2. Section 1: Who We Are (Redesigned) */}
+      <WhoWeAre />
+
+      {/* 3. Section 2: Why ChaseHorse G.E.L.P.? (Redesigned) */}
+      <WhyGelp />
+
+      {/* 4. Our Service Categories (Tier 1, Tier 2, Tier 3) */}
+      <ThreeTierSection />
+
+      {/* 5. Platform (GELP) Benefits */}
+      <PlatformBenefitsSection />
+    </div>
+  );
+};
+
+export default HomePage;

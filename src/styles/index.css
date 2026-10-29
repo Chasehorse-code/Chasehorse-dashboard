@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-ivory: #F4F1EA;
+  --brand-charcoal: #171717;
+  --brand-orange: #FF4D16;
+  --brand-border: #E2DED5;
+  --brand-muted: #625E58;
+}
+
+body {
+  margin: 0;
+  background-color: #F4F1EA;
+  color: #171717;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F1EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5CEBE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4D16;
+}
+
+/* Card glass / surface utilities */
+.surface-card {
+  background: #FFFFFF;
+  border: 1px solid #E2DED5;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(23, 23, 23, 0.03);
+}
+
+.surface-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.surface-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -5px rgba(23, 23, 23, 0.08);
+  border-color: #D5CEBE;
+}
+
+/* Mega menu glass backdrop */
+.mega-menu-panel {
+  background: #FFFFFF;
+  border: 1px solid #E2DED5;
+  box-shadow: 0 20px 50px -10px rgba(23, 23, 23, 0.12);
+}
+
+/* Accent badge */
+.badge-orange {
+  background-color: #FFF0EB;
+  color: #FF4D16;
+  border: 1px solid rgba(255, 77, 22, 0.2);
+}
+
+/* Button primary */
+.btn-primary {
+  background-color: #FF4D16;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #E53E0B;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(255, 77, 22, 0.3);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #171717;
+  border: 1px solid #E2DED5;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #FAF8F5;
+  border-color: #171717;
+}
+
+/* Pulse animation for map markers */
+@keyframes map-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 77, 22, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 77, 22, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 77, 22, 0);
+  }
+}
+
+.pulse-marker {
+  animation: map-pulse 2s infinite;
+}
+
+/* India Map Outline & Corridors Shining Animations */
+@keyframes mapOutlineShine {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes mapCorridorFlow {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-map-outline-shine {
+  animation: mapOutlineShine 8s linear infinite;
+}
+
+.animate-map-outline-shine-fast {
+  animation: mapOutlineShine 5s linear infinite;
+}
+
+.animate-map-corridor-flow {
+  animation: mapCorridorFlow 2.2s linear infinite;
+}
+
+

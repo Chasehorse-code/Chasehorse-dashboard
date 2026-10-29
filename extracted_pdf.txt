@@ -1,0 +1,168 @@
+ Website Design and CMS – Required Improvements 
+ 1. Navigation Bar Lacks Animation and Premium Dropdown Interaction 
+ ●  Chasehorse font has to be redesigned to match the logo. 
+ ●  We need to increase the space between the menu 
+ Menus 
+ 1.  Platform 
+ Once we click on the platform menu it should directly go the service pages where we 
+ are showing all our services like tier1,2,3 
+ Replace the Why GELP with What is GELP . 
+ How it works? 
+ Platform Features 
+ Capabilities 
+ All Service heading  need to remove 
+ Technology integration 
+ Flexible finance models 
+ Skilled ready resources 
+ business scalability 
+ Get Started 
+ Ask for trials! 
+ Book a demo 
+ Let’s connect (whatsapp integration ) 
+ Design your platform 
+ The Text has to be edited and GELP Must be in the bracket 
+
+ 2.  Solutions 
+ Please refer the screenshot and reflect the same 
+ ●  Sectors 
+ ●  Industries 
+ ●  Partner ecosystem 
+ ●  Design your solution (DIY) 
+ ●  Customised solution 
+ Design Your solution  :  To be included under Solutions  Menu 
+ It should be like this so they can select the service they needed based on their requirement 
+
+ 3.  Live Market 
+ ●  Book truck Now 
+ ●  Book Truck terminal space 
+ ●  Deploy On-field Lead 
+ ●  Secure Trip finance 
+ ●  Today Freight index 
+ 4.  Discover 
+
+ Just add these and remove the other things which are not mentioned here from the current site 
+ Find our service location 
+ find our offline  HSEStores 
+ HSE Shop 
+ When we click on the HSEShop it should land on its homepage 
+ In the menu we need to give find offline store - request for  on-site store 
+ It should be clearly visible and  request for on-site store and below it must be like this we 
+ deploy our store and manage compliance  as how you have done for merchandise and ppe . 
+ official chasehorse something like this. In the top right 
+ 5.  Partners 
+ ●  Partners menu should come right next to the login menu. 
+ Join us - onfield logistics professionals 
+ https://forms.gle/QmiddiuRkaRLbesEA 
+
+ Join us - Transportation professionals, 
+ ●  Transporters 
+ ●  fleet owners 
+ ●  Drivers 
+ ●  freight traders 
+ ●  freight financials 
+ Join us - Truck terminal  space 
+ 6.  Login 
+ The current navigation bar needs to include the interactive animations and premium dropdown 
+ experience as illustrated in the below given website. 
+ Reference  website:  https://www.project44.com/ai-agent-orchestration  / 
+ Need a similar type of navigation experience where:. 
+ The reference website should be studied not only for its visual appearance but also for its interaction 
+ style, animation quality, content organization, and overall user experience. 
+ Drop Down: 
+ We need all these In the navibar 
+ 1.  Platform tab:  we need you add the same information  which we have added in the home page 
+ of Odoo 
+ Design Your solution  :  To be included under Solutions  Menu 
+
+ It should be like this so they can select the service they needed based on their requirement 
+
+ Solution: 
+ Shall be same as screenshot shared , ref to link in beginning. 
+ Design menu, shall be coming under this on top. 
+ Discover:  we need like this 
+ HSE Shop: 
+ Partners: 
+
+ Here we should add the form and WhatsApp group link   so they can access directly 
+ Link:  https://forms.gle/QmiddiuRkaRLbesEA 
+ Login: 
+ The login should come in different tab. 
+ 2. Hero Section Requires a Dynamic images of solution/ service. 
+ Image shall have below hyper links. 
+ Know more 
+ Book Now / Connect now 
+ Whatsapp button with contact person image, to immediately connect. 
+ The hero section should include HD images of core services. 
+ Requirements include: 
+ Platform (Discover more) 
+ Few Services (like deploy and digital Transformation) 
+ Discover more 
+ Customers 
+ Benefits of using platform 
+ What it's going to be 
+ Everything summary navigation in bottom 
+
+ ●  Three high-quality videos should be used in the hero background. 
+ ●  The videos should automatically transition in a smooth sequence. 
+ ●  The transition between videos should have a premium sliding, fading, or cinematic effect. 
+ ●  The videos should play continuously without disturbing the readability of the hero content. 
+ ●  Appropriate overlays should be used so that the heading, description, and call-to-action buttons 
+ remain clearly visible. 
+ ●  The videos should represent the complete scope of our company rather than presenting us only 
+ as a logistics or delivery company. 
+ ●  The hero section should communicate our broader capabilities, including business services, 
+ consulting, growth, technology, operations, and other relevant service areas. 
+ The objective is to immediately communicate that the company operates across multiple business 
+ verticals and offers a much broader range of solutions. 
+ 3. No Clear Explanation of the Three-Tier Service Structure 
+ One of the most important aspects of our business model is that our services are organized into three 
+ different tiers. However, the current website does not clearly explain this structure. 
+ The website should include a dedicated section that introduces and explains: 
+ ●  Tier 1 – Core Business Services 
+ ●  Tier 2 – Strategic & Growth Services 
+ ●  Tier 3 – Advanced Operations & Technology Services 
+ The user should immediately understand: 
+ ●  Why the services are divided into three tiers. 
+ ●  What type of services are included in each tier. 
+ ●  Who each tier is designed for. 
+ ●  How the three tiers are connected. 
+ ●  How a business can select the appropriate service or combination of services. 
+ This explanation should be presented visually using a premium layout, clear hierarchy, animations, 
+ icons, cards, or an interactive section. 
+ 4. No Individual Page and Workﬂow for Each Service 
+ Currently, the website does not provide a dedicated page for every individual service. This is a major 
+ requirement. 
+ Each service should have its own detailed page containing: 
+ ●  Service title and overview. 
+ ●  Detailed explanation of the service. 
+ ●  Problems the service solves. 
+ ●  Who the service is designed for. 
+ ●  Key features and deliverables. 
+ ●  Benefits to the client. 
+ ●  Step-by-step workflow. 
+ ●  Expected outcomes. 
+ ●  Related services. 
+ ●  Call-to-action or booking option. 
+ The workflow is especially important. Users should be able to clearly understand how the service 
+ works from the initial consultation to final delivery. 
+ The exact workflow should be customized according to each individual service rather than using the 
+ same generic process everywhere. 
+ Home → Three-Tier Overview → Tier Page → Individual Service Page-> Individual subservice 
+ Page→ Workflow / Booking / Enquiry 
+ This hierarchy is necessary to make the website easier to understand and navigate. 
+ 5. Merchandise Page Does Not Look or Function Like an E-Commerce Website 
+ The current merchandise page does not provide a proper e-commerce experience. 
+ The merchandise section should look and function like a professional online store. It should include: 
+ ●  Proper product cards. 
+ ●  Search and filtering options. 
+ ●  Product sorting. 
+ ●  Individual product detail pages. 
+ ●  Product variants such as size or colour where applicable. 
+ ●  Checkout process. 
+ ●  Payment integration. 
+ ●  Order confirmation. 
+ ●  Order tracking where applicable. 
+ The page should visually feel like a real e-commerce store rather than a basic product showcase or 
+ catalogue. 
+ 6. Client Login page 
+ In that few of the thing need to be added in dashboard like course, 

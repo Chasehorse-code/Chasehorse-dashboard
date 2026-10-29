@@ -1,0 +1,165 @@
+export const DISCOVER_COURSES = [
+  {
+    id: 'course-1',
+    title: 'Certified On-Field Logistics Supervisor (CFLS)',
+    duration: '6 Weeks (Self-paced + 2 Weeks Practical Dock Training)',
+    level: 'Professional',
+    rating: 4.9,
+    enrolled: 1420,
+    category: 'Field Operations',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80',
+    description: 'The definitive industry standard for warehouse dock supervision, vehicle fitness verification, gate-entry documentation, and team leadership.',
+    modules: [
+      'Module 1: Inbound & Outbound Dock Workflows',
+      'Module 2: Commercial Documentation & E-Way Bill Reconciliation',
+      'Module 3: Cargo Lashing & Weight Distribution Physics',
+      'Module 4: Mobile Field Audit Tools & Real-Time Incident Logging',
+    ],
+    certification: 'ChaseHorse Certified Field Supervisor Credential',
+  },
+  {
+    id: 'course-2',
+    title: '8D Root Cause Analysis in Supply Chains',
+    duration: '4 Weeks (Online)',
+    level: 'Intermediate',
+    rating: 4.8,
+    enrolled: 890,
+    category: 'Quality & CX',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80',
+    description: 'Master the Eight Disciplines methodology to diagnose transit damages, delayed dispatch cycles, and inventory variances, converting failures into permanent SOP improvements.',
+    modules: [
+      'Module 1: D1-D3 Immediate Containment and Emergency Response',
+      'Module 2: D4 Root Cause Diagnostics (5-Why, Fishbone, Is/Is Not)',
+      'Module 3: D5-D6 Permanent Corrective Actions Verification',
+      'Module 4: D7-D8 Systemic Prevention and Executive Reporting',
+    ],
+    certification: 'ChaseHorse Supply Chain Quality Practitioner',
+  },
+  {
+    id: 'course-3',
+    title: 'Industrial Cargo Lashing & Securing (EN 12195)',
+    duration: '3 Weeks (Hands-on Workshops in NCR, Mumbai, BLR)',
+    level: 'Advanced Technical',
+    rating: 4.95,
+    enrolled: 640,
+    category: 'Technical Engineering',
+    image: 'https://images.unsplash.com/photo-1586528116493-a029325540fa?auto=format&fit=crop&w=600&q=80',
+    description: 'Physics and calculation formulas for heavy cargo transport. Covers frictional coefficients, tension ratchet forces, dunnage air bags, and anti-slip rubber pads.',
+    modules: [
+      'Module 1: Dynamics of Road Freight & Acceleration Vectors',
+      'Module 2: Strapping, Chain Lashing, and Ratchet Rating Math',
+      'Module 3: Dunnage Bag Pressure Balancing & Void Filling',
+      'Module 4: Practical Rigging & Heavy Machinery Securing',
+    ],
+    certification: 'EN 12195 Certified Cargo Lashing Specialist',
+  },
+  {
+    id: 'course-4',
+    title: 'Warehouse Safety, Ergonomics & HSE Standards',
+    duration: '2 Weeks (Online + Quiz)',
+    level: 'Foundational',
+    rating: 4.7,
+    enrolled: 2300,
+    category: 'HSE & Safety',
+    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80',
+    description: 'Zero-harm workplace certification. Master hazard recognition, chemical spill containment, forklift traffic segregation, and proper PPE donning and maintenance.',
+    modules: [
+      'Module 1: Statutory Workplace Safety Regulations & Indian Factories Act',
+      'Module 2: Personal Protective Equipment (PPE) Compliance Ledger',
+      'Module 3: Material Handling Ergonomics & Safe Lifting',
+      'Module 4: Emergency Evacuation, Fire Fighting & First Aid',
+    ],
+    certification: 'ChaseHorse HSE Workplace Safety Pass',
+  },
+];
+
+export const DISCOVER_INTERNSHIPS = [
+  {
+    id: 'intern-1',
+    title: 'Supply Chain Operations Trainee',
+    duration: '6 Months (Full-time On-site)',
+    stipend: '₹22,000 / month',
+    locations: ['Bengaluru', 'Mumbai', 'New Delhi NCR', 'Chennai'],
+    description: 'Rotate across active client distribution centers. Work alongside senior field leads conducting dock audits, truck inspections, and digital dispatch logging.',
+  },
+  {
+    id: 'intern-2',
+    title: 'Logistics Data & Machine Learning Intern',
+    duration: '3–6 Months (Hybrid)',
+    stipend: '₹25,000 / month',
+    locations: ['Bengaluru (Tech HQ)'],
+    description: 'Analyze telemetry and freight rate datasets. Help build dynamic lane ETA models and automated document OCR parsers for freight bills.',
+  },
+  {
+    id: 'intern-3',
+    title: 'HSE & Workplace Safety Fellow',
+    duration: '4 Months (On-site)',
+    stipend: '₹18,000 / month',
+    locations: ['Chennai (Sriperumbudur)', 'Kolkata (Dankuni)'],
+    description: 'Participate in factory hazard assessments, PPE inventory distribution audits, and help establish on-site managed safety stores.',
+  },
+];
+
+export const DISCOVER_STORIES = [
+  {
+    id: 'story-1',
+    company: 'Tier 1 Automotive Transmission Manufacturer',
+    industry: 'Automotive & Heavy Engineering',
+    headline: 'Eliminated ₹1.8 Crore in Annual Transit Damage with CH Deploy and Certified Lashing',
+    metrics: [
+      { label: 'Transit Damage Reduction', value: '94%' },
+      { label: 'Dock Turnaround Time', value: '-38%' },
+      { label: 'Annual Cost Saved', value: '₹1.8 Cr' },
+    ],
+    summary: 'The client faced frequent damage to precision machined gears moving between Pune and Chennai. ChaseHorse deployed dedicated dock supervisors who enforced custom rubber-damped lashing and photographic gate inspections, virtually wiping out transit breakage.',
+  },
+  {
+    id: 'story-2',
+    company: 'National Consumer Electronics & Appliances Brand',
+    industry: 'FMCG & Consumer Durables',
+    headline: 'Digitized 45 Regional 3PL Warehouses with Centralized GELP Visibility in 60 Days',
+    metrics: [
+      { label: 'Warehouses Digitized', value: '45 Hubs' },
+      { label: 'Inventory Discrepancy', value: '0.04%' },
+      { label: 'E-Way Bill Penalties', value: 'Zero' },
+    ],
+    summary: 'By deploying ChaseHorse Digital Transformation and automated E-way bill cross-checks, the brand eliminated transit detention notices and established unified C-suite visibility across 45 third-party regional logistics depots.',
+  },
+  {
+    id: 'story-3',
+    company: 'Leading Solar Module & Inverter Supplier',
+    industry: 'Renewable Infrastructure',
+    headline: 'JIT Express Deliveries for 450 MW Solar Park in Western Rajasthan',
+    metrics: [
+      { label: 'On-Time In-Full', value: '99.4%' },
+      { label: 'Crane Idle Time', value: '0 hrs' },
+      { label: 'Special Deliveries', value: '180 FTLs' },
+    ],
+    summary: 'Navigating remote desert terrain with oversize solar trailers required flawless coordination. ChaseHorse managed dedicated pilot escorts, dual-driver shifts, and emergency roadside response to meet critical commissioning deadlines.',
+  },
+];
+
+export const DISCOVER_RESOURCES = [
+  {
+    title: 'Pan-India Freight Rate & Diesel Correlation Whitepaper (2025–2026)',
+    type: 'Research Whitepaper',
+    size: '14 Pages PDF',
+    downloads: '3.4k',
+    description: 'Comprehensive analysis of 12 critical industrial freight lanes, fuel price elasticity, and load rationalization strategies.',
+  },
+  {
+    title: 'Master Warehouse Dock Inspection SOP Checklist (Excel / PDF)',
+    type: 'Operational Template',
+    size: 'Audit Ready Form',
+    downloads: '6.8k',
+    description: 'The exact 42-point vehicle fitness and dock safety checklist utilized daily by ChaseHorse CH Deploy teams.',
+  },
+  {
+    title: 'E-Way Bill & GST Checkpoint Survival Guide for Logistics Managers',
+    type: 'Regulatory Playbook',
+    size: 'Handbook',
+    downloads: '5.1k',
+    description: 'Statutory guidelines, required driver documentation, and protocol during state transport tax vehicle inspections.',
+  },
+];
+
