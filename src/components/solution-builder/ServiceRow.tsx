@@ -1,5 +1,4 @@
 import React, { forwardRef } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
 import { Info, Check } from 'lucide-react';
 import { Service } from './types';
 
@@ -30,8 +29,6 @@ export const ServiceRow = React.memo(
     },
     ref
   ) {
-    const shouldReduceMotion = useReducedMotion();
-
     return (
       <label
         ref={ref}
@@ -41,7 +38,7 @@ export const ServiceRow = React.memo(
         onMouseLeave={onMouseLeave}
         onFocus={(e) => onFocus(service, e.currentTarget)}
         onBlur={onBlur}
-        className={`group relative flex items-center justify-between py-3 px-4 sm:px-5 transition-all duration-150 cursor-pointer outline-none select-none border-b last:border-b-0 ${
+        className={`group relative flex items-center justify-between py-2.5 px-4 transition-colors duration-150 cursor-pointer outline-none select-none border-b last:border-b-0 ${
           isSelected ? 'font-medium' : ''
         }`}
         style={{
@@ -51,14 +48,12 @@ export const ServiceRow = React.memo(
             : isHoveredOrActive
             ? 'var(--soft)'
             : 'transparent',
-          transform: !shouldReduceMotion && isHoveredOrActive ? 'translateX(4px)' : 'none',
-          transition: 'transform 150ms ease, background-color 150ms ease',
         }}
       >
         {/* Left Accent Indicator Bar */}
-        {(isSelected || isHoveredOrActive) && (
+        {isSelected && (
           <span
-            className="absolute left-0 top-0 bottom-0 w-1 transition-all duration-150"
+            className="absolute left-0 top-0 bottom-0 w-[3px]"
             style={{
               backgroundColor: 'var(--acc)',
               boxShadow: 'var(--glow)',
@@ -89,7 +84,7 @@ export const ServiceRow = React.memo(
           </div>
 
           <span
-            className="text-xs sm:text-sm font-semibold tracking-tight transition-colors line-clamp-2"
+            className="text-[13px] font-medium leading-snug tracking-tight"
             style={{
               color: isSelected ? 'var(--ink)' : 'var(--ink)',
             }}

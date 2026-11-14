@@ -49,20 +49,19 @@ export const GroupCard: React.FC<GroupCardProps> = ({
 
   return (
     <div
-      className="sb-card rounded-2xl border overflow-hidden transition-all duration-200 flex flex-col justify-between"
+      className="sb-card rounded-2xl overflow-hidden transition-shadow duration-200 flex flex-col"
       style={{
         background: 'var(--card)',
-        borderColor: 'var(--line)',
+        border: '1px solid var(--line)',
         boxShadow: 'var(--shadow-card)',
       }}
     >
       {/* Group Header */}
       <div
-        className="px-4 sm:px-5 py-3.5 border-b flex items-center justify-between select-none"
+        className="px-4 py-3 flex items-center justify-between select-none"
         style={{
           background: 'var(--header-bg)',
           color: 'var(--header-sub)',
-          borderColor: 'var(--line)',
         }}
       >
         <label className="flex items-center space-x-2.5 cursor-pointer min-w-0 flex-1 pr-2">
@@ -88,9 +87,9 @@ export const GroupCard: React.FC<GroupCardProps> = ({
             </div>
           </div>
 
-          <h4 className="text-xs sm:text-sm font-bold tracking-wide truncate">
+          <h3 className="text-[13px] font-bold tracking-tight leading-snug" title={groupName}>
             {groupName}
-          </h4>
+          </h3>
         </label>
 
         {/* Counter Badge */}
@@ -106,7 +105,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({
       </div>
 
       {/* Service Rows */}
-      <div className="divide-y" style={{ borderColor: 'var(--line)' }}>
+      <div>
         {services.map((service) => (
           <ServiceRow
             key={service.id}
