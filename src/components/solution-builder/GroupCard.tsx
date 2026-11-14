@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import { Check, Minus } from 'lucide-react';
 import { Service } from './types';
 import { ServiceRow } from './ServiceRow';
+import { CheckboxVisual } from './Checkbox';
 
 interface GroupCardProps {
   groupName: string;
@@ -38,74 +38,37 @@ export const GroupCard: React.FC<GroupCardProps> = ({
   const isIndeterminate = selectedCount > 0 && selectedCount < totalCount;
 
   useEffect(() => {
-    if (headerCheckboxRef.current) {
-      headerCheckboxRef.current.indeterminate = isIndeterminate;
-    }
+    if (headerCheckboxRef.current) headerCheckboxRef.current.indeterminate = isIndeterminate;
   }, [isIndeterminate]);
 
-  const handleHeaderCheckboxChange = () => {
-    onToggleGroup(services, !isAllSelected);
-  };
-
   return (
-    <div
-      className="sb-card rounded-2xl overflow-hidden transition-shadow duration-200 flex flex-col"
-      style={{
-        background: 'var(--card)',
-        border: '1px solid var(--line)',
-        boxShadow: 'var(--shadow-card)',
-      }}
-    >
-      {/* Group Header */}
-      <div
-        className="px-4 py-3 flex items-center justify-between select-none"
-        style={{
-          background: 'var(--header-bg)',
-          color: 'var(--header-sub)',
-        }}
-      >
-        <label className="flex items-center space-x-2.5 cursor-pointer min-w-0 flex-1 pr-2">
-          <div className="relative flex items-center justify-center shrink-0">
-            <input
-              type="checkbox"
-              ref={headerCheckboxRef}
-              checked={isAllSelected}
-              onChange={handleHeaderCheckboxChange}
-              className="peer sr-only"
-              aria-label={`Select all services in ${groupName}`}
-            />
-            <div
-              className="w-4 h-4 rounded border transition-all flex items-center justify-center peer-focus-visible:ring-2"
-              style={{
-                borderColor: isAllSelected || isIndeterminate ? 'var(--acc)' : 'rgba(255,255,255,0.4)',
-                backgroundColor: isAllSelected || isIndeterminate ? 'var(--acc)' : 'rgba(0,0,0,0.3)',
-                boxShadow: isAllSelected ? 'var(--glow)' : 'none',
-              }}
-            >
-              {isAllSelected && <Check className="w-3 h-3 text-white stroke-[3]" />}
-              {isIndeterminate && <Minus className="w-3 h-3 text-white stroke-[3]" />}
-            </div>
-          </div>
-
-          <h3 className="text-[13px] font-bold tracking-tight leading-snug" title={groupName}>
+    <div role="group" aria-label={groupName} className="py-3 first:pt-1" style={{ borderColor: 'var(--line)' }}>
+      {/* Category header */}
+      <div className="flex items-center justify-between gap-2 px-2 mb-1">
+        <label className="flex items-center gap-2 cursor-pointer min-w-0 flex-1 select-none">
+          <input
+            type="checkbox"
+            ref={headerCheckboxRef}
+            checked={isAllSelected}
+            onChange={() => onToggleGroup(services, !isAllSelected)}
+            className="peer sr-only"
+            aria-label={`Select all services in ${groupName}`}
+          />
+          <CheckboxVisual checked={isAllSelected} indeterminate={isIndeterminate} />
+          <h3 className="text-[13px] font-bold tracking-tight leading-snug" style={{ color: 'var(--ink)' }}>
             {groupName}
           </h3>
         </label>
-
-        {/* Counter Badge */}
         <span
-          className="text-[10px] font-mono font-bold tracking-wider px-2 py-0.5 rounded shrink-0 uppercase"
-          style={{
-            background: selectedCount > 0 ? 'var(--acc)' : 'rgba(255,255,255,0.15)',
-            color: '#ffffff',
-          }}
+          className="text-[10.5px] font-mono font-semibold tabular-nums shrink-0"
+          style={{ color: selectedCount > 0 ? 'var(--acc)' : 'var(--mut)' }}
         >
           {selectedCount}/{totalCount}
         </span>
       </div>
 
-      {/* Service Rows */}
-      <div>
+      {/* Service rows (indented under the category) */}
+      <div className="pl-4">
         {services.map((service) => (
           <ServiceRow
             key={service.id}
@@ -124,4 +87,3 @@ export const GroupCard: React.FC<GroupCardProps> = ({
     </div>
   );
 };
-

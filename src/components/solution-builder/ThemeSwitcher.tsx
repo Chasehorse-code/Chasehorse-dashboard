@@ -14,8 +14,8 @@ export const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({
   themes,
 }) => {
   return (
-    <div 
-      role="radiogroup" 
+    <div
+      role="radiogroup"
       aria-label="Color Theme Switcher"
       className="inline-flex items-center p-1 rounded-xl border sb-border sb-card shadow-sm gap-1"
       style={{
@@ -58,11 +58,11 @@ export const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({
                 boxShadow: isActive ? `0 0 6px ${t.dotColor}` : 'none',
               }}
             />
-            <span className="relative z-10 font-medium">{t.label}</span>
+            <span className="relative z-10 font-medium whitespace-nowrap hidden sm:inline">{t.label}</span>
+            <span className="relative z-10 font-medium whitespace-nowrap sm:hidden">{t.id === 'dark' ? 'Dark' : t.label.split(' ').pop()}</span>
           </button>
         );
       })}
     </div>
   );
 };
-
